@@ -1,8 +1,8 @@
 {
-  "name": "SafeArea-IME-Padding-Demo",
+  "name": "safearea-ime-padding-demo",
+  "description": "Demo project for showcasing the safe area padding bug when keyboard is open on Android with WebView Version is higher than 144",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Martin Frühauf",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -21,6 +21,12 @@
     "@angular/platform-browser": "^20.0.0",
     "@angular/platform-browser-dynamic": "^20.0.0",
     "@angular/router": "^20.0.0",
+    "@capacitor-community/safe-area": "^8.0.1",
+    "@capacitor/android": "^8.3.0",
+    "@capacitor/app": "8.1.0",
+    "@capacitor/core": "8.3.0",
+    "@capacitor/haptics": "8.0.2",
+    "@capacitor/keyboard": "8.0.3",
     "@ionic/angular": "^8.0.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
@@ -37,7 +43,9 @@
     "@angular/cli": "^20.0.0",
     "@angular/compiler-cli": "^20.0.0",
     "@angular/language-service": "^20.0.0",
+    "@capacitor/cli": "8.3.0",
     "@ionic/angular-toolkit": "^12.0.0",
+    "@ionic/cli": "^7.2.1",
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
@@ -53,6 +61,5 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.9.0"
-  },
-  "description": "An Ionic project"
+  }
 }
