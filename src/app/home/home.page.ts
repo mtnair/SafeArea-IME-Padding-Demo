@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { Device, DeviceInfo } from '@capacitor/device';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,11 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
+  readonly deviceInfo = signal<DeviceInfo | null>(null);
 
-  constructor() {}
-
+  constructor() {
+    Device.getInfo().then((info) => {
+      this.deviceInfo.set(info);
+    });
+  }
 }
